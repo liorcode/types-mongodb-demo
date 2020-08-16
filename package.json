@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@types/mongodb": "^3.5.26",
     "typescript": "^3.9.7"
   },
   "devDependencies": {},
