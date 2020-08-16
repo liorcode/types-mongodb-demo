@@ -9,4 +9,4 @@ const client: Db = null;
 client.collection<Doc>('col').find({
   'accounts.pageId': {$in: [1, 2, 3]},
 }, {projection: {'accounts.pageId': 1}})
-  .sort({name: -1});
+  .map(user => user.accounts.pageId);
